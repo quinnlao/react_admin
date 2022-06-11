@@ -1,0 +1,37 @@
+.aside{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(245, 244, 244);
+    position: absolute;
+    left: 0;
+    top: 0;
+    .menu{
+        padding-top: 50px;
+        .menuTitle{
+            position: relative;
+            height: 31px;
+            line-height: 31px;
+            padding-left: 50px;
+            .childMenu{
+                li{
+                    display: none;
+                    
+                }
+            }
+        }
+        .menuTitle:hover,.childMenu>li:hover {
+            background-color: rgb(179, 170, 170,0.8);
+        }
+        .menuTitle:hover .childMenu li{
+            display: block;
+        }
+        .menuTitle::after {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            font-family: 'Courier New';
+            content: '>';
+            font-size: 14px;
+        }
+    }
+}

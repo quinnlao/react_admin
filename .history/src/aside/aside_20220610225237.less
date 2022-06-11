@@ -1,0 +1,36 @@
+.s
+.aside1{
+    height: 80%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    .menu{
+        padding-top: 50px;
+        .menuTitle{
+            position: relative;
+            height: 31px;
+            line-height: 31px;
+            padding-left: 50px;
+            .childMenu{
+                li{
+                    display: none;                  
+                }
+            }
+        }
+        .menuTitle:hover,.childMenu>li:hover {
+            background-color: rgba(179, 170, 170,0.3);
+        }
+        .menuTitle:hover .childMenu li{
+            display: block;
+        }
+        .menuTitle::after {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            font-family: 'Courier New';
+            content: '>';
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;;
+}
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #f5f4f4;
+    display: flex;
+    flex-direction: row;
+    fl
+}

@@ -1,0 +1,31 @@
+.aside{
+    width: 15rem;
+    height: 100rem;
+    background-color: rgb(125, 78, 78);
+    position: absolute;
+    left: 0;
+    top: 0;
+    .menuTitle{
+        position: relative;
+        height: 31px;
+        line-height: 31px;
+        padding-left: 50px;
+        background-color: rgb(179, 170, 170);
+        .childMenu{
+            li{
+                background-color: rgb(179, 170, 170);
+            }
+        }
+    }
+    .menuTitle:hover{
+        background-color: rgb(179, 170, 170);
+    }
+    .menuTitle::after {
+        position: absolute;
+        top: 1px;
+        right: 10px;
+        font-family: 'Courier New';
+        content: '>';
+        font-size: 14px;
+    }
+}

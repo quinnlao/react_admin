@@ -1,0 +1,35 @@
+.nav{
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .menu{
+        padding-top: 50px;
+        .menuTitle{
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 50px;
+            .childMenu{
+                li{
+                    display: none;                  
+                }
+            }
+        }
+        .menuTitle:hover,.childMenu>li:hover {
+            background-color: rgba(179, 170, 170,0.3);
+        }
+        .menuTitle:hover .childMenu li{
+            display: block;
+        }
+        .menuTitle::after {
+            position: absolute;
+            top: 1px;
+            right: 10px;
+            font-family: 'Courier New';
+            content: '>';
+            font-size: 14px;
+        }
+    }
+}

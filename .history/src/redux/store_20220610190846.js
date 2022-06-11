@@ -1,0 +1,19 @@
+ 
+import { createStore } from "redux";
+//引入公用的方法
+import { SET_NSME } from './action'
+ 
+    //传值 name:姓名    age:  年龄
+function user(state = { name: 'blue', age: 18 }, action) {
+    switch (action.type) {
+        case SET_NSME:
+            return {
+                ...state,
+                age: state.age + action.n,
+                name: action.name
+            }
+        default:
+            return state;
+    }
+}
+export default createStore(user)
