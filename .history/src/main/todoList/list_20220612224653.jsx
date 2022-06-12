@@ -15,13 +15,13 @@ class List extends Component {
     var myList = window.localStorage.getItem("myList");
     //判断myList是否是空的
     if (myList === null || myList === "") {
-      myList = []
+      myList = [1111, 2222, 3333]
     } else {
       myList = myList.split(",")
     }
     //把转换过的数组赋值给this.setState名为myList
     this.setState({
-      myList: [...this.state.myList]
+      myList: [...this.state.myList, myList]
     })
 
   }

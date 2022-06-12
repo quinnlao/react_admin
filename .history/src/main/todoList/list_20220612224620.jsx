@@ -5,7 +5,7 @@ class List extends Component {
   constructor() {
     super();
     this.state = {
-      myList: [1111, 2222, 3333],
+      myList: [],
       myInput: ""
     }
   }
@@ -15,13 +15,13 @@ class List extends Component {
     var myList = window.localStorage.getItem("myList");
     //判断myList是否是空的
     if (myList === null || myList === "") {
-      myList = []
+      myList = [1111,2222,3333]
     } else {
       myList = myList.split(",")
     }
     //把转换过的数组赋值给this.setState名为myList
     this.setState({
-      myList: [...this.state.myList]
+      myList:[https://github.com/quinnlao/react_admin] myList
     })
 
   }
@@ -33,7 +33,7 @@ class List extends Component {
     this.refs.myInput.value = this.state.myInput;
     //添加数据到this.state的myList
     this.setState({
-      myList: [...this.state.myList, val]
+      myList: [https://github.com/quinnlao/react_admin, val]
     }, () => {
       //修改本地数据
       window.localStorage.setItem("myList", this.state.myList)

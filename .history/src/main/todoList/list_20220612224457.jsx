@@ -5,7 +5,7 @@ class List extends Component {
   constructor() {
     super();
     this.state = {
-      myList: [1111, 2222, 3333],
+      myList: [],
       myInput: ""
     }
   }
@@ -21,7 +21,7 @@ class List extends Component {
     }
     //把转换过的数组赋值给this.setState名为myList
     this.setState({
-      myList: [...this.state.myList]
+      myList: myList
     })
 
   }
